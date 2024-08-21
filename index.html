@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Page title</title>
+    <script src="https://kit.fontawesome.com/8d56b97bad.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/8d56b97bad.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  scroll-behaviour: smooth;
+  overscroll-behaviour: none;
+    }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  margin-top: 2px;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+    .logo{
+        display: flex;
+        background: #00000091;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        z-index: 4;
+    }
+    body{
+        background: #000f23;
+        
+    }
+    .logo i{
+        margin-top: 15px;
+        margin-left: 130px;
+        font-size: 26px;
+        color: whitesmoke;
+    }
+    .logo p{
+        font-size: 24px;                
+        margin: 15px;
+        font-weight: 500;
+        color: whitesmoke;
+    }
+    .head img{
+        width: 100%;
+        height: 180px;
+        margin-top: 60px;
+    }
+    .txt{
+        text-align: center;
+        margin-top: 10px;
+        line-height: 22px;
+        color: whitesmoke;
+    }
+    .buy{
+        text-align: center;
+        margin-top: 10px;
+        color: whitesmoke;
+    }
+    .account p{
+        margin: 20px;
+        color: whitesmoke;
+        font-weight: 500;
+    }
+    .account ul li{
+        width: 110px;
+        height: 100px;
+        display: inline-table;
+        margin: 20px;
+        border-radius: 10px;
+        
+    }
+    .account ul li img:hover{
+        border-left: 2px solid #001758;
+        border-right: 2px solid #001758;
+        border-top: 2px solid #001758;
+        border-bottom: 3px solid #001758;
+    }
+    .account ul li img{
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+        border-left: 2px solid #001758;
+        border-right: 2px solid #001758;
+        border-top: 2px solid #001758;
+        border-bottom: 5px solid #001758;
+    }
+   .chose:hover{
+       border-bottom: 3px solid #000c30;
+   }
+    .chose{
+        width: 80%;
+        height: 210px;
+        margin-left: 10%;
+        margin-top: 20px;
+        text-align: center;
+        color: whitesmoke;
+        border-radius: 10px;
+        background: #1a9c1c;
+        border-left: 1px solid #001758;
+        border-right: 1px solid #001758;
+        border-top: 1px solid #001758;
+        border-bottom: 5px solid #001758;
+    }
+    .chose h3{
+        text-align: center;
+        position: relative;
+        top: 15px;
+    }
+    .chose p{
+        line-height: 22px;
+        margin-top: 25px;
+    }
+    h3 i{
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    .footer{
+        width: 100%;
+        height: 650px;
+        margin-top: 30px;
+        border-radius: 15px 15px 0px 0px;
+        background: #dcd3b7;
+    }
+    .footer .email{
+        text-align: center;
+        top: 20px;
+        width: 80%;
+        margin-left: 10%;
+        position: relative;
+    }
+    .input-mail{
+        width: 70%;
+        height: 30px;
+        margin-left: 15%;
+        margin-top: 30px;
+        padding-left: 3px;
+        border-radius: 5px;
+        outline: none;
+        background: #dcd3b7;
+        border: none;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+    #error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+#success-message {
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
+#submit{
+    width: 28%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    margin-left: 33%;
+    margin-top: 17px;
+    background: #1d3db0e0;
+    border-left: 2px solid #001758;
+        border-right: 2px solid #001758;
+        border-top: 2px solid #001758;
+        border-bottom: 5px solid #001758;
+        color: white;
+}
+#submit:hover{
+    border-left: 2px solid #001758;
+        border-right: 2px solid #001758;
+        border-top: 2px solid #001758;
+        border-bottom: 3px solid #001758;
+}
+.cashell{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-left: 7px;
+}
+.footer i{
+    margin-right: 5px;
+}
+.sites h4{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.sites ul li{
+    margin: 18px;
+    list-style: none;
+}
+.done{
+    margin-left: 12px;
+}
+.menu{
+    width: 90%;
+    height: 515px;
+    background: #8098ff88;
+    position: fixed;
+    margin-top: 60px;
+    z-index: 3;
+    border-radius: 0px 0px 10px 0px;
+    overflow: hidden;
+    transform: translatey(-650px);
+    transition: 1s ease;
+    
+}
+.menu .button button:hover{
+    border-bottom: 3px solid black;
+}
+.menu .button button{
+    margin: 20px;
+    width: 130px;
+    border-radius: 9px;
+    font-weight: 600;
+    height: 40px;
+    border: none;
+    background: blue;
+    color: white;
+    font-weight: 600;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 5px solid black;
+}
+.Facebook{
+    border-left: 10px solid red;
+}
+.menu ul li{
+    width: 98%;
+    height: 50px;
+    font-weight: 600;
+    border-bottom: 0.1px solid white;
+    display: flex;
+    color: whitesmoke;
+    padding-left: 5px;
+    align-items: center;
+    
+}
+
+.menu i{
+    margin-right: 10px;
+}
+.hidden{
+   opacity: 0;
+   transition: all 1s;
+   filter: blur(10px);
+   transform: translatey(30px);
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+.loader-svg{
+    width: 100%;
+    height: 100vh;
+    background: #000f23;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-svg i{
+    margin-right: 10px;
+    animation: rot 2s infinite;
+}
+@keyframes rot{
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fa-circle-stop{
+    margin-left: 175px;
+}
+@media (max-width: 1024px){
+    .logo{
+        height: 100px;
+    }
+    .fa-circle-stop{
+        margin-left: 280px;
+    }
+    .logo p{
+        font-size: 50px;
+    }
+    .menu{
+        width: 400px;
+        margin-left: 0px;
+        margin-top: 100px;
+        height: 440px;
+    }
+    .menu ul li{
+        font-size: 17px;
+    }
+    .logo i{
+        font-size: 50px;
+        margin-top: 15px;
+        margin-left: 650px;
+    }
+    .head img{
+        height: 440px;
+        margin-top: 100px
+    }
+    .buy{
+        font-size: 25px;
+    }
+    .txt{
+        font-size: 19px;
+    }
+    .account p{
+        font-size: 25px;
+    }
+    .account ul li{
+        width: 200px;
+    }
+    .account ul li img{
+        width: 180px;
+        height: 180px;
+    }
+    .chose h3{
+        font-size: 23px;
+    }
+    .chose p{
+        font-size: 17px;
+    }
+    .chose{
+        width: 30%;
+        display: inline-block;
+        margin:  1%;
+    }
+    .footer h4{
+        font-size: 23px;
+    }
+    .footer input{
+        width: 420px;
+        height: 30px;
+        margin-left: 300px;
+        font-size: 17px;
+    }
+    #submit{
+        width: 200px;
+        font-size: 17px;
+        margin-left: 410px;
+    }
+    .cashell{
+        font-size: 17px;
+    }
+    .sites h4{
+        font-size: 24px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 430px;
+    }
+}
+@media (max-width: 768px){
+    .logo{
+        height: 100px;
+    }
+    .logo p{
+        font-size: 50px;
+    }
+    .menu{
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 100px;
+        height: 520px;
+    }
+    .menu ul li{
+        font-size: 15px;
+    }
+    .logo i{
+        font-size: 50px;
+        margin-top: 15px;
+        margin-left: 400px;
+    }
+    .head img{
+        height: 400px;
+        margin-top: 100px
+    }
+    .buy{
+        font-size: 23px;
+    }
+    .txt{
+        font-size: 17px;
+    }
+    .account p{
+        font-size: 23px;
+    }
+    .account ul li{
+        width: 200px;
+    }
+    .account ul li img{
+        width: 180px;
+        height: 180px;
+    }
+    .chose h3{
+        font-size: 22px;
+    }
+    .chose p{
+        font-size: 16px;
+    }
+    .chose{
+        width: 30%;
+        display: inline-block;
+        margin:  1%;
+        height: 250px;
+    }
+    .footer h4{
+        font-size: 22px;
+    }
+    .footer input{
+        width: 400px;
+        height: 30px;
+        margin-left: 140px;
+        font-size: 16px;
+    }
+    #submit{
+        width: 200px;
+        font-size: 16px;
+        margin-left: 250px;
+    }
+    .cashell{
+        font-size: 17px;
+    }
+    .sites h4{
+        font-size: 22px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 450px;
+    }
+}
+
+
+@media (max-width: 436px){
+    .logo{
+        height: 70px;
+    }
+    .logo p{
+        font-size: 29px;
+    }
+    .menu{
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 70px;
+        height: 510px;
+    }
+    .menu ul li{
+        font-size: 15px;
+    }
+    .logo i{
+        font-size: 38px;
+        margin-top: 15px;
+        margin-left: 200px;
+    }
+    .head img{
+        height: 200px;
+        margin-top: 70px
+    }
+    .buy{
+        font-size: 21px;
+    }
+    .txt{
+        font-size: 15px;
+    }
+    .account p{
+        font-size: 21px;
+    }
+    .account ul li{
+        width: 100px;
+    }
+    .account ul li img{
+        width: 170px;
+        height: 170px;
+    }
+    .chose h3{
+        font-size: 21px;
+    }
+    .chose p{
+        font-size: 17px;
+    }
+    .chose{
+        width: 80%;
+        display: inline-block;
+        margin-left:  10%;
+        margin-top: 30px;
+        height: 200px;
+    }
+    .footer h4{
+        font-size: 21px;
+    }
+    .footer input{
+        width: 300px;
+        height: 30px;
+        margin-left: 54px;
+        font-size: 15px;
+    }
+    #submit{
+        width: 150px;
+        font-size: 15px;
+        margin-left: 137px;
+    }
+    .cashell{
+        font-size: 15px;
+    }
+    .sites h4{
+        font-size: 21px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 600px;
+    }
+}
+
+
+
+@media (max-width: 376px){
+    .logo{
+        height: 60px;
+    }
+    .logo p{
+        font-size: 30px;
+        margin: 10px;
+    }
+    .menu{
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 60px;
+        height: 480px;
+    }
+    .menu ul li{
+        font-size: 15px;
+    }
+    .logo i{
+        font-size: 36px;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+    .head img{
+        height: 200px;
+        margin-top: 60px
+    }
+    .buy{
+        font-size: 21px;
+    }
+    .txt{
+        font-size: 15px;
+    }
+    .account p{
+        font-size: 21px;
+    }
+    .account ul li{
+        width: 100px;
+    }
+    .account ul li img{
+        width: 140px;
+        height: 140px;
+    }
+    .chose h3{
+        font-size: 21px;
+    }
+    .chose p{
+        font-size: 17px;
+    }
+    .chose{
+        width: 80%;
+        display: inline-block;
+        margin-left:  10%;
+        margin-top: 30px;
+        height: 200px;
+    }
+    .footer h4{
+        font-size: 21px;
+    }
+    .footer input{
+        width: 300px;
+        height: 30px;
+        margin-left: 39px;
+        font-size: 15px;
+    }
+    #submit{
+        width: 150px;
+        font-size: 15px;
+        margin-left: 100px;
+    }
+    .cashell{
+        font-size: 15px;
+    }
+    .sites h4{
+        font-size: 21px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 600px;
+    }
+    .error-message{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 321px){
+    .logo{
+        height: 60px;
+    }
+    .logo p{
+        font-size: 24px;
+        margin: 10px;
+    }
+    .menu{
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 60px;
+        height: 530px;
+    }
+    .menu ul li{
+        font-size: 14px;
+    }
+    .logo i{
+        font-size: 35px;
+        margin-top: 10px;
+        margin-left: 130px;
+    }
+    .head img{
+        height: 170px;
+        margin-top: 60px
+    }
+    .buy{
+        font-size: 19px;
+    }
+    .txt{
+        font-size: 14px;
+    }
+    .account p{
+        font-size: 19px;
+    }
+    .account ul li{
+        width: 100px;
+    }
+    .account ul li img{
+        width: 110px;
+        height: 110px;
+    }
+    .chose h3{
+        font-size: 19px;
+    }
+    .chose p{
+        font-size: 16px;
+    }
+    .chose{
+        width: 80%;
+        display: inline-block;
+        margin-left:  10%;
+        margin-top: 30px;
+        height: 230px;
+    }
+    .footer h4{
+        font-size: 16px;
+    }
+    .footer input{
+        width: 250px;
+        height: 30px;
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    #submit{
+        width: 150px;
+        font-size: 14px;
+        margin-left: 80px;
+    }
+    .cashell{
+        font-size: 14px;
+    }
+    .sites h4{
+        font-size: 17px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 600px;
+    }
+    .error-message{
+        font-size: 14px;
+    }
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <p>CASHELL</p>
+            <i class="fa-solid fa-x red-circle" style="display: none;" onclick="moveRectBack()"></i>
+            <i class="fa-solid fa-bars blue-circle" onclick="moveRect()"></i>
+            
+        </div>
+    </nav>
+    <div class="menu" id="rect">
+        <div class="button">
+            <button><i class="fa-solid fa-phone"></i>Contact us</button>
+            <button><i class="fa-solid fa-location-dot"></i>About</button>
+        </div>
+        <hr>
+        <ul>
+            <li id="home"><i class="fa-solid fa-house"></i>Home<i class="fa-regular fa-circle-stop" style="color: #ffffff;"></i></li>
+            <li id="tik"><span class="material-symbols-outlined">
+music_note
+</span>Tiktok</li>
+            <li id="facebook-button"><i class="fa-brands fa-facebook"></i>Facebook</li>
+            <li id="x"><i class="fa-brands fa-square-x-twitter"></i>X</li>
+            <li id="call"><i class="fa-solid fa-gamepad"></i>Call of duty</li>
+            <li id="free"><i class="fa-solid fa-gamepad"></i>Free fire</li>
+            <li id="insta"><i class="fa-brands fa-square-instagram"></i>Instagram</li>
+        </ul>
+    </div>
+    <div id="body">
+    <div class="head">
+        <img src="https://od.lk/s/MjNfMzI5ODAzNjJf/Dofoto_20240808_121633854.jpg" alt="">
+        <p class="buy">
+            <b>Buy and  Sell</b>
+            
+            
+        </p>
+        <p class="txt">Accounts for cheap and affordable prices e.g Call of duty, Facebook, Instagram account and many more</p>
+    </div>
+    <div class="account hidden">
+        <p>Choose account</p>
+        <ul>
+            <li class="hidden"><img src="https://od.lk/s/MjNfMzI5ODgyMTlf/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc.png" alt="" id="faceboook-button"></li>
+            <li class="hidden"><img src="https://od.lk/s/MjNfMzI5ODgyMjBf/unnamed.webp" alt="" id="calls"></li>
+            <li class="hidden"><img src="https://od.lk/s/MjNfMzI5ODgyMjFf/download.jpeg" alt="" id="instag"></li>
+            <li class="hidden"><img src="https://od.lk/s/MjNfMzI5ODgyMjZf/images%20%285%29.jpeg" alt="" id="freex"></li>
+            <li class="hidden"><img src="https://od.lk/s/MjNfMzI5ODgyMjhf/images%20%286%29.jpeg" alt="" id="xr"></li>
+            <li class="hidden"><img src="https://od.lk/s/MjNfMzI5ODgyMjdf/tiktok-icon2.png" alt="" id="tiko"></li>
+        </ul>
+    </div>
+    <div class="chose hidden">
+    <h3><i class="fa-solid fa-pen-fancy"></i>Options</h3>
+    <p>Click on the type of account you wish to sell or buy. Give clear information about the account you wish to sell. Set amount and a buyer will locate you shortly</p>
+    </div>
+    
+    
+    <div class="chose hidden">
+    <h3><i class="fa-solid fa-gamepad"></i>Games</h3>
+    <p>your amount and market price will be calculated exactly as it is our profit will be 20% set a correct amount that will attract buyers (stay updated on market prices)</p>
+    </div>
+    
+    
+    <div class="chose hidden">
+    <h3><i class="fa-solid fa-user-group"></i>Followers</h3>
+    <p>your account amount will be set base on your followers 1,000 followers is equal to 1,000 Naira stay on alert (only account above 1,000 followers allowed)</p>
+    </div>
+    <div class="footer hidden">
+        <h4 class="email hidden">Enter email to receive new update on website</h4>
+        
+        <input type="text" id="email" class="input-mail hidden" placeholder="Enter email address"/>
+       <p id="error-message"></p>
+        <button id="submit" class="hidden btnn">Submit</button>
+<p class="cashell hidden"><i class="fa-solid fa-clover"></i>CASHELL website is used to bring buyer to seller . and also no account will be given out until payment is confirmed. if you are from other countries apart from Nigeria please message us privately (only those who are buying if you are selling you can proceed on selling)</p>
+<div class="sites hidden">
+    <h4>Follow our social media handle</h4>
+    <ul>
+        <li><i class="fa-brands fa-square-x-twitter"></i>Cashell</li>
+        <li><i class="fa-brands fa-square-instagram"></i>@Cashell</li>
+        <li><i class="fa-brands fa-whatsapp"></i>cashell</li>
+        <li><i class="fa-brands fa-facebook"></i>cashell</li>
+    </ul>
+</div>
+<p class="done hidden">Cashell@inc.in</p>
+    </div>
+    </div>
+    <div class="loder-svg">
+       <i class="fa-solid fa-clover hidden"></i>
+       <p class="hidden">CASHELL </p>
+    </div>
+</body>
+<script>
+    const emailInput = document.getElementById('email');
+const submitButton = document.getElementById('submit');
+const errorMessage = document.getElementById('error-message');
+
+submitButton.addEventListener('click', () => {
+  const emailValue = emailInput.value.trim();
+
+  if (emailValue === '') {
+    errorMessage.textContent = 'Please fill this field';
+  } else if (emailValue.includes(' ')) {
+    errorMessage.textContent = 'Wrong input';
+  } else if (!emailValue.endsWith('@gmail.com')) {
+    errorMessage.textContent = 'Not an Email address';
+  } else {
+    errorMessage.textContent = '';
+    errorMessage.innerHTML = '<span id="success-message">Email sent successfully</span>';
+  }
+});
+
+
+function moveRect() {
+var body = document.getElementById("body");
+  body.style.filter = "blur(10px)";
+  document.body.style.overflow = "hidden";
+  
+  
+  var rect = document.getElementById("rect");
+  rect.style.transform = "translatey(0px)";
+  var blueCircle = document.querySelector(".blue-circle");
+  blueCircle.style.display = "none";
+  var redCircle = document.querySelector(".red-circle");
+  redCircle.style.display = "block";
+}
+
+function moveRectBack() {
+  var rect = document.getElementById("rect");
+  rect.style.transform = "translatey(-650px)";
+  
+  var body = document.getElementById("body");
+  body.style.filter = "blur(0px)";
+  document.body.style.overflow = "auto";
+  
+  var blueCircle = document.querySelector(".blue-circle");
+  blueCircle.style.display = "block";
+  var redCircle = document.querySelector(".red-circle");
+  redCircle.style.display = "none";
+}
+
+
+
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+window.addEventListener("load", () =>{
+    const loader = document.querySelector(".loader-svg");
+    loader.classList.add("loader-hidden");
+    loader.addEventListener("transitionend", () =>{
+        document.body.removeChild("loader");
+    })
+})
+
+
+
+const facebookButton = document.getElementById('facebook-button');
+facebookButton.addEventListener('click', () => {
+  window.open('Facebook.html', '_blank');
+});
+
+
+const facebookButtoon = document.getElementById('faceboook-button');
+facebookButtoon.addEventListener('click', () => {
+  window.open('Facebook.html', '_blank');
+});
+
+
+const home = document.getElementById('home');
+home.addEventListener('click', () => {
+  window.open('index.html', '_blank');
+});
+
+
+const x = document.getElementById('x');
+x.addEventListener('click', () => {
+  window.open('x.html', '_blank');
+});
+
+const xr = document.getElementById('xr');
+xr.addEventListener('click', () => {
+  window.open('x.html', '_blank');
+});
+
+
+const insta = document.getElementById('insta');
+insta.addEventListener('click', () => {
+  window.open('Instagram.html', '_blank');
+});
+
+const instag = document.getElementById('instag');
+instag.addEventListener('click', () => {
+  window.open('Instagram.html', '_blank');
+});
+
+const tik = document.getElementById('tik');
+tik.addEventListener('click', () => {
+  window.open('tiktok.html', '_blank');
+});
+
+const tiko = document.getElementById('tiko');
+tiko.addEventListener('click', () => {
+  window.open('tiktok.html', '_blank');
+});
+
+
+const call = document.getElementById('call');
+call.addEventListener('click', () => {
+  window.open('call.html', '_blank');
+});
+
+
+const calls = document.getElementById('calls');
+calls.addEventListener('click', () => {
+  window.open('call.html', '_blank');
+});
+
+const free = document.getElementById('free');
+free.addEventListener('click', () => {
+  window.open('free.html', '_blank');
+});
+
+const freex = document.getElementById('freex');
+freex.addEventListener('click', () => {
+  window.open('free.html', '_blank');
+});
+
+
+
+</script>
+</html>

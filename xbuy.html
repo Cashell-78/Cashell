@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <script src="https://kit.fontawesome.com/8d56b97bad.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: #000f23;
+        color:  whitesmoke;
+    }
+    .hero h3{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+        .hero p{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .head{
+        font-size: 30px;
+        margin: 10px;
+        color: white;
+    }
+    .account ul li{
+        width: 70%;
+    height: 470px;
+    margin: 15%;
+    list-style: none;
+    border-radius: 10px;
+    }
+    .account ul li img{
+        width: 95%;
+    height: 300px;
+    border: 1px solid blue;    
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 2px blue;
+    }
+    p{
+        margin: 10px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+    .button button{
+        width: 100px;
+        height: 40px;
+        font-size: 19px;
+        font-weight: 500;
+        background: red;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 2px 2px 20px #8098ff79;
+    }
+    .last{
+        text-align: center;
+        margin-top: 20px;
+        color: #434343;
+    }
+    @media (max-width: 1024px){
+        .account ul li{
+        width: 70%;
+    height: 690px;
+    margin-left: 270px;
+    }
+    .account ul li img{
+        width: 65%;
+    height: 520px;
+    
+    }
+    }
+    @media (max-width: 768px){
+        .account ul li{
+        width: 70%;
+    height: 650px;
+    margin-left: 200px;
+    }
+    .account ul li img{
+        width: 65%;
+    height: 500px;
+    
+    }
+    }
+    @media (max-width: 436px){
+        .account ul li{
+        width: 80%;
+    height: 620px;
+    margin-left: 40px;
+    }
+    .account ul li img{
+        width: 95%;
+    height: 3t0px;
+    
+    }
+    } 
+    
+    
+    @media (max-width: 376px){
+        .account ul li{
+        width: 80%;
+    height: 490px;
+    margin-left: 40px;
+    }
+    .account ul li img{
+        width: 95%;
+    height: 350px;
+    
+    }
+    }   
+</style>
+<body>
+    <div class="head">
+        <i class="fa-solid fa-angle-left" id="Facebook"></i>
+    </div>
+    <div class="hero">
+        <h3>Available Account</h3>
+        <p>List of Facebook account available for sell. check for the specific one you want to buy</p>
+    </div>
+    <div class="account">
+        <ul>
+            <!-- <li><img src="https://od.lk/s/MjNfMzMwMTYzNDRf/IMG-20240812-WA0013_1.jpg" alt="">
+            <p><b>Year:</b> 0</p>
+            <p><b>Status:</b> On sale</p>
+            <p><b>Market price:</b> 0</p>
+            <div class="button">
+                
+            
+            <button id="payy">Buy</button>
+            </div>
+            </li> -->
+            <!-- <li><img src="https://od.lk/s/MjNfMzMwMTYzNDRf/IMG-20240812-WA0013_1.jpg" alt="">
+            <p><b>Year:</b> 0</p>
+            <p><b>Status:</b> On sale</p>
+            <p><b>Market price:</b> 0</p>
+            <div class="button">
+                
+            
+            <button id="pay">Buy</button>
+            </div>
+            </li> -->
+        </ul>
+        
+    </div>
+    <div class="last">
+        <p>No more Account for sell</p>
+    </div>
+</body>
+<script>
+    const Facebook= document.getElementById('Facebook');
+Facebook.addEventListener('click', () => {
+  window.open('x.html', '_blank');
+});
+
+
+
+const Faceboook= document.getElementById('pay');
+Faceboook.addEventListener('click', () => {
+  window.open('pay.html', '_blank');
+});
+
+
+
+const Facebooook= document.getElementById('payy');
+Facebooook.addEventListener('click', () => {
+  window.open('pay.html', '_blank');
+});
+
+</script>
+</html>

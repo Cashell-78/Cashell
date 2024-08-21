@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <script src="https://kit.fontawesome.com/8d56b97bad.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: #FFF;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+    }
+    .head img{
+        width: 280px;
+    }
+    .content {
+        width: 100%;
+        height: 460px;
+        margin-top: 50px;
+    }
+   input{
+       margin: 10px;
+       width: 60%;
+       height: 35px;
+       border-radius: 10px;
+       padding-left: 7px;
+       border: none;
+       border: 1px solid #111bc7a4;
+       font-size: 17px;
+       
+   }
+   .web{
+       margin: 10px;
+       font-weight: 500;
+   }
+  i{
+      font-size: 21px;
+      
+  }
+  button{
+      padding: 5px;
+      border: none;
+      background: blue;
+      box-shadow: 2px 2px 23px #34343495;
+      border-radius: 5px;
+      color: white;
+  }
+  .last{
+      text-align: center;
+      width: 90%;
+      margin-left: 5%;
+  }
+  .lastp{
+      text-align: center;
+      font-weight: 500;
+  }
+  .lastImg{
+      width: 80px;
+      
+  }
+</style>
+<body>
+    <div class="head">
+        <img src="https://od.lk/s/MjNfMzMwNjg0MjJf/images%20%281%29.png" alt="">
+    </div>
+
+    <div class="content">
+        <div class="logo">
+            <p class="web">Name</p>
+            <input type="text" id="myInput" value="Osarumwense Wilson" readonly>
+<button id="copyButton"><i class="fa-solid fa-copy"></i></button>
+<p class="web">Bank Name</p>
+<input type="text" id="myInputt" value="Moniepoint" readonly>
+<button id="copyBuutton"><i class="fa-solid fa-copy"></i></button>
+
+<p class="web">Account number</p>
+<input type="text" id="mmyInput" value="9077483176" readonly>
+<button id="coppyButton"><i class="fa-solid fa-copy"></i></button>
+
+<p class="last">Send your <b>payment proof</b> to this chat on <a href="https://wa.me/qr/3KZMRB2OZ7QHK1">Whatsapp</a> along with the <b>Screenshot</b> of the type of account you want to buy after that your <b>Password</b> and your <b>Email</b> will be delivered to you  </p>
+    <p class="web">Thanks for your patronage 👍</p>
+    <p class="lastp">Powered by <img src="https://od.lk/s/MjNfMzMwNjg0MjJf/images%20%281%29.png" alt="" class="lastImg"></p>
+
+
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    
+    const coppyButton = document.getElementById('coppyButton');
+const mmyInput = document.getElementById('mmyInput');
+
+coppyButton.addEventListener('click', () => {
+  mmyInput.select();
+  document.execCommand('copy');
+  alert('Text copied to clipboard!');
+});
+    
+    
+    
+const copyButton = document.getElementById('copyButton');
+const myInput = document.getElementById('myInput');
+
+copyButton.addEventListener('click', () => {
+  myInput.select();
+  document.execCommand('copy');
+  alert('Text copied to clipboard!');
+});
+
+
+
+const copyBuutton = document.getElementById('copyBuutton');
+const myInputt = document.getElementById('myInputt');
+
+copyBuutton.addEventListener('click', () => {
+  myInputt.select();
+  document.execCommand('copy');
+  alert('Text copied to clipboard!');
+});
+
+
+</script>
+</html>

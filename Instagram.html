@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d56b97bad.js" crossorigin="anonymous"></script>
+    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  scroll-behaviour: smooth;
+  overscroll-behaviour: none;
+    }
+    .logo{
+        display: flex;
+        background: #00000091;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        z-index: 4;
+    }
+    body{
+        background: #000f23;
+        
+    }
+    .logo i{
+        margin-top: 15px;
+        margin-left: 130px;
+        font-size: 26px;
+        color: whitesmoke;
+    }
+    .logo p{
+        font-size: 24px;                
+        margin: 15px;
+        font-weight: 500;
+        color: whitesmoke;
+    }
+   .menu{
+    width: 90%;
+    height: 515px;
+    background: #8098ff88;
+    position: fixed;
+    margin-top: 60px;
+    z-index: 3;
+    border-radius: 0px 0px 10px 0px;
+    overflow: hidden;
+    transform: translatey(-650px);
+    transition: 1s ease;
+    
+}
+.menu .button button:hover{
+    border-bottom: 3px solid black;
+}
+.menu .button button{
+    margin: 20px;
+    width: 130px;
+    border-radius: 9px;
+    font-weight: 600;
+    height: 40px;
+    border: none;
+    background: blue;
+    color: white;
+    font-weight: 600;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 5px solid black;
+}
+.menu ul li{
+    width: 98%;
+    height: 50px;
+    font-weight: 600;
+    border-bottom: 0.1px solid white;
+    display: flex;
+    color: whitesmoke;
+    padding-left: 5px;
+    align-items: center;
+    
+}
+
+.menu i{
+    margin-right: 10px;
+}
+.head img{
+        width: 100%;
+        height: 180px;
+        margin-top: 60px;
+    }
+    .txt{
+        text-align: center;
+        margin-top: 10px;
+        line-height: 22px;
+        color: whitesmoke;
+    }
+    .buy{
+        text-align: center;
+        margin-top: 10px;
+        color: whitesmoke;
+    }
+    
+    .second{
+        color: white;
+        margin-top: 30px;
+    }
+    .second h3{
+        margin: 10px;
+    }
+    .second h3 i{
+        margin-right: 5px;
+    }
+    .second p{
+        margin: 10px;
+    }
+    .footer{
+        width: 100%;
+        height: 650px;
+        margin-top: 30px;
+        border-radius: 15px 15px 0px 0px;
+        background: #dcd3b7;
+    }
+    .footer .email{
+        text-align: center;
+        top: 20px;
+        width: 80%;
+        margin-left: 10%;
+        position: relative;
+    }
+    .input-mail{
+        width: 70%;
+        height: 30px;
+        margin-left: 15%;
+        margin-top: 30px;
+        padding-left: 3px;
+        border-radius: 5px;
+        outline: none;
+        background: #dcd3b7;
+        border: none;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+    #error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+#success-message {
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
+#submit{
+    width: 28%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    margin-left: 33%;
+    margin-top: 17px;
+    background: #1d3db0e0;
+    border-left: 2px solid #001758;
+        border-right: 2px solid #001758;
+        border-top: 2px solid #001758;
+        border-bottom: 5px solid #001758;
+        color: white;
+}
+#sub{
+    width: 42%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    margin-left: 33%;
+    margin-top: 17px;
+    background: red;
+    border-left: 2px solid #001758;
+        border-right: 2px solid #001758;
+        border-top: 2px solid #001758;
+        border-bottom: 5px solid #001758;
+        color: white;
+}
+#submit:hover{
+    border-left: 2px solid #001758;
+        border-right: 2px solid #001758;
+        border-top: 2px solid #001758;
+        border-bottom: 3px solid #001758;
+}
+.cashell{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-left: 7px;
+}
+.footer i{
+    margin-right: 5px;
+}
+.sites h4{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.sites ul li{
+    margin: 18px;
+    list-style: none;
+}
+.done{
+    margin-left: 12px;
+}
+.Facebook{
+    border-left: 10px solid red;
+}
+.second ul li img{
+    width: 100%;
+    height 60px;
+    
+}
+.second ul li img{
+    width: 95%;
+    height: 300px;
+    border: 1px solid blue;    
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 2px blue;
+}
+.second ul li{
+    width: 70%;
+    height: 370px;
+    margin: 15%;
+    list-style: none;
+    border-radius: 10px;
+  
+    
+}
+.web{
+    color: red;
+}
+b{
+    color: white;
+}
+.fa-face-smile{
+    margin-right: 5px;
+}
+form{
+    color: whitesmoke;
+    margin-top: 20px;
+}
+form .input{
+    color: whitesmoke;
+    margin-left: 26px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    height: 30px;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    border: 0px solid #2a3254;
+    box-shadow: 2px 2px 10px 2px #00142f;
+    padding-left: 9px;
+    outline: none;
+    width: 74%;
+}
+form p{
+    margin-left: 26px;
+    margin-top: 2px;
+}
+form i{
+    margin-right: 8px;
+}
+input[type="file"]{
+    display: none;
+}
+.fore{
+    width: 140px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: #c0392b;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 25px #2f375d;
+}
+#progress-bar-container {
+  display: none;
+  width: 80%;
+  height: 5px;
+  background-color: #ffffff50;
+  overflow: hidden;
+  margin-top: 9px;
+  margin-left: 17px;
+  border-radius: 6px;
+  
+}
+
+#progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #2bd5ffd4;
+  transform: translateX(0);
+  transition: none;
+}
+#upload-status{
+    width: 60%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.fa-file-image{
+    font-size: 28px;
+    margin-left: 6px;
+}
+.fa-circle-check{
+    font-size: 13px;
+    float: right;
+    margin-left: 22%;
+}
+.post{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 26px;
+    margin-bottom: 17px;
+}
+.post h3{
+    text-transform: uppercase;
+    margin-bottom:9px;
+}
+.important{
+    color: whitesmoke;
+    margin: 20px;
+}
+b i{
+    margin-right: 8px;
+}
+.send-btn{
+    width:  90px;
+    height: 40px;
+    margin-left: 18px;
+    margin-top: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 25px #2f375d;
+    background: #6aa2fff4;
+}
+.fa-circle-stop{
+    margin-left: 145px;
+}
+@media (max-width: 1024px){
+    .logo{
+        height: 100px;
+    }
+    .fa-circle-stop{
+       margin-left: 250px;
+    }
+    
+    .logo p{
+        font-size: 50px;
+    }
+    .menu{
+        width: 400px;
+        margin-left: 0px;
+        margin-top: 100px;
+        height: 440px;
+    }
+    .menu ul li{
+        font-size: 17px;
+ 
+    }
+    .logo i{
+        font-size: 50px;
+        margin-top: 15px;
+        margin-left: 650px;
+    }
+    .head img{
+        height: 460px;
+        margin-top: 100px
+    }
+    .buy{
+        font-size: 25px;
+    }
+    .txt{
+        font-size: 19px;
+    }
+    .second ul li img{
+        height: 700px;
+    }
+    .second ul li{
+        height: 770px;
+    }
+    .second ul li p{
+        font-size: 18px;
+    }
+    .second ul li p b{
+        font-size: 24px;
+    }
+    .over{
+        font-size: 18px;
+    }
+    #sub{
+        width: 170px;
+        font-size: 19px;
+        margin-left: 42%;
+        cursor: pointer;
+    }
+    .post h3{
+        font-size: 23px;
+    }
+    .post p{
+        font-size: 18px;
+    }
+    form p{
+        font-size: 18px;
+    }
+    form .input{
+        width: 280px;
+        height: 50px;
+        font-size: 17px;
+    }
+    .fore{
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .send-btn{
+        width: 150px;
+        height: 50px;
+        font-size: 23px;
+    }
+    .important {
+        font-size: 17px;
+    }
+    .important b{
+        font-size: 20px;
+    }
+    .footer h4{
+        font-size: 23px;
+    }
+    .footer input{
+        width: 420px;
+        height: 30px;
+        margin-left: 300px;
+        font-size: 17px;
+    }
+    #submit{
+        width: 200px;
+        font-size: 17px;
+        margin-left: 410px;
+    }
+    .cashell{
+        font-size: 17px;
+    }
+    .sites h4{
+        font-size: 24px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 430px;
+    }
+}
+@media (max-width: 768px){
+    .logo{
+        height: 100px;
+    }
+    .logo p{
+        font-size: 50px;
+    }
+    .menu ul li .fa-circle-stop{
+        margin-left: 140px;
+    }
+    .menu{
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 100px;
+        height: 520px;
+    }
+    .menu ul li{
+        font-size: 15px;
+    }
+    .logo i{
+        font-size: 50px;
+        margin-top: 15px;
+        margin-left: 400px;
+    }
+    .head img{
+        height: 400px;
+        margin-top: 100px
+    }
+    .buy{
+        font-size: 23px;
+    }
+    .txt{
+        font-size: 17px;
+    }
+    .footer h4{
+        font-size: 22px;
+    }
+    .footer input{
+        width: 400px;
+        height: 30px;
+        margin-left: 140px;
+        font-size: 16px;
+    }
+    #submit{
+        width: 200px;
+        font-size: 16px;
+        margin-left: 250px;
+    }
+    .cashell{
+        font-size: 17px;
+    }
+    .sites h4{
+        font-size: 22px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 450px;
+    }
+    .second ul li img{
+        Height: 550px;
+    }
+    .second ul li{
+        height: 600px;
+    }
+    .fa-circle-stop{
+        margin-left: 170px;
+    }
+
+}
+@media (max-width: 436px){
+    .logo{
+        height: 70px;
+    }
+    .logo p{
+        font-size: 29px;
+    }
+    .menu{
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 70px;
+        height: 540px;
+    }
+    .menu ul li{
+        font-size: 15px;
+    }
+    .logo i{
+        font-size: 38px;
+        margin-top: 15px;
+        margin-left: 200px;
+    }
+    .head img{
+        height: 200px;
+        margin-top: 70px
+    }
+    .buy{
+        font-size: 21px;
+    }
+    .txt{
+        font-size: 15px;
+    }
+    
+    .footer h4{
+        font-size: 21px;
+    }
+    .footer input{
+        width: 300px;
+        height: 30px;
+        margin-left: 54px;
+        font-size: 15px;
+    }
+    #submit{
+        width: 150px;
+        font-size: 15px;
+        margin-left: 137px;
+    }
+    .cashell{
+        font-size: 15px;
+    }
+    .sites h4{
+        font-size: 21px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 600px;
+    }
+    .second ul li img{
+        height: 350px;
+    }
+    .second ul li{
+        height: 500px;
+    }
+    .second ul li p{
+        font-size: 15px;
+    }
+    .second ul li p b{
+        font-size: 19px;
+    }
+    .over{
+        font-size: 16px;
+    }
+    #sub{
+        width: 170px;
+        font-size: 19px;
+        margin-left: 30%;
+        cursor: pointer;
+    }
+    .post h3{
+        font-size: 19px;
+    }
+    .post p{
+        font-size: 16px;
+    }
+    form p{
+        font-size: 16px;
+    }
+    form .input{
+        width: 250px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .fore{
+        width: 140px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .send-btn{
+        width: 110px;
+        height: 40px;
+        font-size: 19px;
+    }
+    .important {
+        font-size: 15px;
+    }
+    .important b{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 376px){
+    .logo{
+        height: 60px;
+    }
+    .logo p{
+        font-size: 30px;
+        margin: 10px;
+    }
+    .menu{
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 60px;
+        height: 530px;
+    }
+    .menu ul li{
+        font-size: 15px;
+    }
+    .logo i{
+        font-size: 36px;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+    .head img{
+        height: 200px;
+        margin-top: 60px
+    }
+    .buy{
+        font-size: 21px;
+    }
+    .txt{
+        font-size: 15px;
+    }
+    
+    .footer h4{
+        font-size: 21px;
+    }
+    .footer input{
+        width: 300px;
+        height: 30px;
+        margin-left: 39px;
+        font-size: 15px;
+    }
+    #submit{
+        width: 150px;
+        font-size: 15px;
+        margin-left: 100px;
+    }
+    .cashell{
+        font-size: 15px;
+    }
+    .sites h4{
+        font-size: 21px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 600px;
+    }
+    .error-message{
+        font-size: 15px;
+    }
+    .error-message{
+        font-size: 14px;
+    }
+    .error-message{
+        font-size: 15px;
+    }
+    .second ul li img{
+        height: 290px;
+    }
+    .second ul li{
+        height: 400px;
+    }
+    .second ul li p{
+        font-size: 14px;
+    }
+    .second ul li p b{
+        font-size: 17px;
+    }
+    .over{
+        font-size: 14px;
+    }
+    #sub{
+        width: 150px;
+        font-size: 16px;
+        margin-left: 30%;
+        cursor: pointer;
+    }
+    .post h3{
+        font-size: 17px;
+    }
+    .post p{
+        font-size: 14px;
+    }
+    form p{
+        font-size: 14px;
+    }
+    form .input{
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .fore{
+        width: 140px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .send-btn{
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .important {
+        font-size: 13px;
+    }
+    .important b{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 321px){
+    .logo{
+        height: 60px;
+    }
+    .logo p{
+        font-size: 24px;
+        margin: 10px;
+    }
+    .menu{
+        width: 280px;
+        margin-left: 0px;
+        margin-top: 60px;
+        height: 530px;
+    }
+    .menu ul li{
+        font-size: 14px;
+    }
+    .logo i{
+        font-size: 35px;
+        margin-top: 10px;
+        margin-left: 130px;
+    }
+    .head img{
+        height: 170px;
+        margin-top: 60px
+    }
+    .buy{
+        font-size: 19px;
+    }
+    .txt{
+        font-size: 14px;
+    }
+    .footer h4{
+        font-size: 16px;
+    }
+    .footer input{
+        width: 250px;
+        height: 30px;
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    #sub{
+        margin-left: 27%;
+    }
+    #submit{
+        width: 150px;
+        font-size: 14px;
+        margin-left: 80px;
+    }
+    .cashell{
+        font-size: 14px;
+    }
+    .sites h4{
+        font-size: 17px;
+    }
+    .sites ul li{
+        display: inline-block;
+    }
+    .footer{
+        height: 600px;
+    }
+    .error-message{
+        font-size: 14px;
+    }
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <p>CASHELL</p>
+              <i class="fa-solid fa-x red-circle" style="display: none;" onclick="moveRectBack()"></i>
+            <i class="fa-solid fa-bars blue-circle" onclick="moveRect()"></i>
+        </div>
+    </nav>
+    <div class="menu" id="rect">
+        <div class="button">
+            <button><i class="fa-solid fa-phone"></i>Contact us</button>
+            <button><i class="fa-solid fa-location-dot"></i>About</button>
+        </div>
+        <hr>
+        <ul>
+            <li id="home"><i class="fa-solid fa-house"></i>Home</li>
+            <li id="tik">
+                <span class="material-symbols-outlined">
+music_note
+</span>
+                Tiktok</li>
+            <li id="facebook-button"><i class="fa-brands fa-facebook"></i>Facebook</li>
+            <li id="x"><i class="fa-brands fa-square-x-twitter"></i>X</li>
+            <li id="call"><i class="fa-solid fa-gamepad"></i>Call of duty</li>
+            <li id="free"><i class="fa-solid fa-gamepad"></i>Free fire</li>
+            <li id="insta"><i class="fa-brands fa-square-instagram"></i>Instagram<i class="fa-regular fa-circle-stop" style="color: #ffffff;"></i></li>
+        </ul>
+    </div>
+    <div id="body">
+    <div class="head">
+        <img src="https://od.lk/s/MjNfMzMwMjk5NDlf/images%20%281%29.jpeg" alt="">
+        <p class="buy">
+            <b>Instagram</b>
+            
+            
+        </p>
+        <p class="txt">Instagram account is available on sale buy Instagram account at cheap prices. If you have Instagram account which you want to sell fill the form below</p>
+    </div>
+   <div class="second">
+       
+       <ul>
+           <li><img src="https://od.lk/s/MjNfMzMwMjk5NDdf/images_1.jpeg">
+           <p><b>Time:</b> 8 mths  </p><p class="web"><b>Status:</b> Sold</p>
+           </li>
+           <li><img src="https://od.lk/s/MjNfMzMwMjk5NDhf/images%20%282%29_1.jpeg" alt="">
+           <p><b>Time:</b> 1 yr  </p><p class="web"><b>Status:</b> Sold</p>
+           </li>
+       </ul>
+       <p><i class="fa-solid fa-face-smile"></i>Over 7,000 Instagrams account has been sold on Cashell and we hope to do more we deliver well to the buyer and the seller click on the button below to look for account available for sell</p>
+       <button id="sub">Buy Account</button>
+   </div>
+   
+   <div class="post">
+       <h3>Post account</h3>
+       <p>After you posted your account on sale you will be redirected to check if you are human. After that we will check the details you sent under 12 hours after check if your details are correct you will receive an email that your account has been posted on sale</p>
+   </div>
+   <form action="https://formsubmit.co/cashellsite@gmail.com" method="POST" enctype="multipart/form-data" id="contact-form"/>
+       <p><i class="fa-solid fa-user"></i>Name</p>
+     <input type="text" class="input" name="Name" placeholder="Name" required>
+     <p><i class="fa-solid fa-naira-sign"></i>Price</p>
+     <input type="number" name="Price" class="input" placeholder="Acc price" id="num1" required>
+     <p><i class="fa-solid fa-naira-sign"></i>Market price</p>
+     <input type="number" name="Market-Price" class="input" placeholder="Market price" id="num2" readonly>
+     <p><i class="fa-solid fa-envelope"></i>Email</p>
+     <input type="email" name="email" class="input" placeholder="Your email" required>
+     
+     <p><i class="fa-solid fa-key"></i>Your account details</p>
+     <input type="email" name="email-account" class="input" placeholder="Your email" required>
+  
+  
+  
+  
+     <input type="password" name="password" class="input" placeholder="Your password" required>
+     
+     
+     
+     
+     
+     <p><i class="fa-solid fa-link"></i>Link</p>
+     <input type="text" name="link" class="input" placeholder="Account link" required>
+     <p><i class="fa-solid fa-image"></i>Screenshot</p>
+     <input type="file" id="image-input" name="image" required/>
+     <label for="image-input" class="fore"><i class="fa fa-upload"></i>upload file</label>
+      <div id="progress-bar-container">
+  <div id="progress-bar"></div>
+</div>
+<div id="upload-status"></div>
+     <button type="submit" class="send-btn">Send</button>
+</form>
+
+<p class="important"><b style="color: red;"><i class="fa-solid fa-triangle-exclamation" style="color: #ff0000;"></i>Important Note:</b> Please make sure the account details you provided are correct otherwise your account will not be posted on sale. Your password and your email are safe with us. we will post your account on sale we won't login or interact with your account details thank you for understanding (no input is optional)</p>
+
+   <div class="footer hidden">
+        <h4 class="email hidden">Enter email to receive new update on website</h4>
+        
+        <input type="text" id="email" class="input-mail hidden" placeholder="Enter email address" required/>
+       <p id="error-message"></p>
+        <button id="submit" class="hidden">Submit</button>
+<p class="cashell hidden"><i class="fa-solid fa-clover"></i>CASHELL website is used to bring buyer to seller . And also no account will be given out until payment is confirmed. If you are from other countries apart from Nigeria please message us privately (Only those who are buying if you are selling you can proceed on selling)</p>
+<div class="sites hidden">
+    <h4>Follow our social media handle</h4>
+    <ul>
+        <li><i class="fa-brands fa-square-x-twitter"></i>Cashell</li>
+        <li><i class="fa-brands fa-square-instagram"></i>@Cashell</li>
+        <li><i class="fa-brands fa-whatsapp"></i>cashell</li>
+        <li><i class="fa-brands fa-facebook"></i>cashell</li>
+    </ul>
+</div>
+<p class="done hidden">Cashell@inc.in</p>
+    </div>
+    </div>
+    
+    <script>
+        function moveRect() {
+        var body = document.getElementById("body");
+  body.style.filter = "blur(10px)";
+  document.body.style.overflow = "hidden";
+  
+  var rect = document.getElementById("rect");
+  rect.style.transform = "translatey(0px)";
+  var blueCircle = document.querySelector(".blue-circle");
+  blueCircle.style.display = "none";
+  var redCircle = document.querySelector(".red-circle");
+  redCircle.style.display = "block";
+}
+
+function moveRectBack() {
+  var rect = document.getElementById("rect");
+  rect.style.transform = "translatey(-650px)";
+  
+  var body = document.getElementById("body");
+  body.style.filter = "blur(0px)";
+  document.body.style.overflow = "auto";
+  
+  var blueCircle = document.querySelector(".blue-circle");
+  blueCircle.style.display = "block";
+  var redCircle = document.querySelector(".red-circle");
+  redCircle.style.display = "none";
+}
+
+
+
+
+
+
+const emailInput = document.getElementById('email');
+const submitButton = document.getElementById('submit');
+const errorMessage = document.getElementById('error-message');
+
+submitButton.addEventListener('click', () => {
+  const emailValue = emailInput.value.trim();
+
+  if (emailValue === '') {
+    errorMessage.textContent = 'Please fill this field';
+  } else if (emailValue.includes(' ')) {
+    errorMessage.textContent = 'Wrong input';
+  } else if (!emailValue.endsWith('@gmail.com')) {
+    errorMessage.textContent = 'Not an Email address';
+  } else {
+    errorMessage.textContent = '';
+    errorMessage.innerHTML = '<span id="success-message">Email sent successfully</span>';
+  }
+});
+
+
+const form = document.getElementById('contact-form');
+const imageInput = document.getElementById('image-input');
+const preview = document.getElementById('preview');
+
+imageInput.addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  const reader = new FileReader();
+
+  reader.onload = (e) => {
+    preview.src = e.target.result;
+  };
+
+  reader.readAsDataURL(file);
+});
+
+
+const num1 = document.getElementById('num1');
+const num2 = document.getElementById('num2');
+
+num1.addEventListener('input', () => {
+  const value = parseFloat(num1.value);
+  const result = value + (value * 0.20);
+  num2.value = result.toFixed(2);
+});
+const imageUploader = document.getElementById('image-input');
+const progressBarContainer = document.getElementById('progress-bar-container');
+const progressBar = document.getElementById('progress-bar');
+const uploadStatus = document.getElementById('upload-status');
+
+imageUploader.addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  const reader = new FileReader();
+
+  reader.onload = (e) => {
+    const imageData = e.target.result;
+    progressBarContainer.style.display = 'block';
+    let progress = 0;
+    const intervalId = setInterval(() => {
+      progress += 20.525; // 1/8 of 100% per second
+      progressBar.style.width = `${progress}%`;
+      if (progress >= 100) {
+        clearInterval(intervalId);
+        uploadStatus.innerHTML = `
+          <i class="fa-solid fa-file-image"></i>
+          Successful
+          <i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i>
+        `;
+        progressBarContainer.style.display = "none";
+        uploadStatus.style.height = "45px";
+        uploadStatus.style.background = "#9aff405b";
+        uploadStatus.style.marginTop = "8px";
+        uploadStatus.style.marginLeft = "10px";
+      }
+    }, 1000); // 1 second interval
+  };
+
+  reader.readAsDataURL(file);
+});
+
+
+const facebookButton = document.getElementById('facebook-button');
+facebookButton.addEventListener('click', () => {
+  window.open('Facebook.html', '_blank');
+});
+
+
+const home = document.getElementById('home');
+home.addEventListener('click', () => {
+  window.open('index.html', '_blank');
+});
+
+const x = document.getElementById('x');
+x.addEventListener('click', () => {
+  window.open('x.html', '_blank');
+});
+
+
+
+
+
+const insta = document.getElementById('insta');
+insta.addEventListener('click', () => {
+  window.open('Instagram.html', '_blank');
+});
+
+
+const tik = document.getElementById('tik');
+tik.addEventListener('click', () => {
+  window.open('tiktok.html', '_blank');
+});
+
+const call = document.getElementById('call');
+call.addEventListener('click', () => {
+  window.open('call.html', '_blank');
+});
+const free = document.getElementById('free');
+free.addEventListener('click', () => {
+  window.open('free.html', '_blank');
+});
+const treb = document.getElementById('sub');
+treb.addEventListener('click', () => {
+  window.open('instabuy.html', '_blank');
+});
+    </script>
+</body>
+</html>
